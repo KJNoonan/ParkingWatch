@@ -1,0 +1,28 @@
+{
+  "name": "parkingwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "transpile": "./node_modules/.bin/babel  ./src --experimental --source-maps-inline -d ./dist",
+    "dev": "yarn transpile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJNoonan/ParkingWatch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KJNoonan/ParkingWatch/issues"
+  },
+  "homepage": "https://github.com/KJNoonan/ParkingWatch#readme",
+  "dependencies": {
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
