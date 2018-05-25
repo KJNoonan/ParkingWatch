@@ -13,3 +13,7 @@ export const isEmpty = item => {
       return true;
   }
 };
+
+export const oneIsNotEmpty = (...rest) => {
+  return rest.some(item => !isEmpty(item));
+};

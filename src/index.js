@@ -1,8 +1,6 @@
 import request from "request-promise";
-//var request = require("request-promise");
+import { GET_VERB, runService } from "./service/HTTPFetcher";
+import { buildChicagoStreetClosureDataUrl } from "./service/ChicagoDataUrl";
 
-request({
-  method: "GET",
-  uri: "https://google.com/",
-  json: true
-}).then(console.log, console.log);
+const address = "1600 W BELL PLAINE";
+//runService(GET_VERB, "https://google.com").then(console.log, console.log);
