@@ -34,7 +34,6 @@ export const buildChicagoStreetClosureDataUrl = ({
   let query;
   if (!isEmpty(args)) {
     query = querystring.stringify(args);
-    console.log(query);
   }
   return `https://data.cityofchicago.org/resource/erhc-fkv9.json${
     !isEmpty(query) ? "?" + query : ""
